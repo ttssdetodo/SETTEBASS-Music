@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SETTEBASS</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Iconos FontAwesome para redes sociales y controles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="Logo SETTEBASS" class="logo">
+            <h1>SETTEBASS MUSIC</h1>
+        </header>
+
+        <!-- Menú de navegación superior -->
+        <nav>
+            <a href="#Tracks">Tracks</a>
+            <a href="#Mashups">Mashups</a>
+            <a href="#Eventos">Eventos</a>
+        </nav>
+
+        <!-- SECCIÓN HERO / DESTACADO -->
+        <section class="hero-section fade-in">
+            <div class="hero-content">
+                <span class="hero-tag">ARTISTA / RELEASE DESTACADO</span>
+                <h2>SETTEBASS</h2>
+                <p>Bienvenido al universo oficial de SETTEBASS. Explora los últimos lanzamientos, sesiones exclusivas y mantente al tanto de las próximas fechas en vivo alrededor del mundo.</p>
+                <a href="#Tracks" class="btn-hero">Descubre la música</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="banner-artista.png" alt="SETTEBASS en vivo" class="hero-image">
+            </div>
+        </section>
+
+        <!-- CONTENEDOR PRINCIPAL CON CARRUSELES -->
+        <main class="container">
+            
+            <!-- SECCIÓN TRACKS -->
+            <section id="Tracks" class="fade-in">
+                <div class="section-header">
+                    <h2>Tracks</h2>
+                    <div class="carousel-arrows">
+                        <button class="arrow-btn" onclick="scrollCarousel('tracks-carousel', -300)">&#10094;</button>
+                        <button class="arrow-btn" onclick="scrollCarousel('tracks-carousel', 300)">&#10095;</button>
+                    </div>
+                </div>
+                
+                <div class="carousel" id="tracks-carousel">
+                    <div class="card">
+                        <img src="track1.webp" alt="Track 1" class="card-img">
+                        <div class="card-content">
+                            <h3>Track Name 1</h3>
+                            <p>Lanzamiento oficial</p>
+                            <!-- Coloca aquí el enlace a tu archivo demo/mp3 -->
+                            <button class="btn btn-play" data-audio="track1.mp3" data-title="Track Name 1">
+                                <i class="fas fa-play"></i> Escuchar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="track2.webp" alt="Track 2" class="card-img">
+                        <div class="card-content">
+                            <h3>Track Name 2</h3>
+                            <p>Remix exclusivo</p>
+                            <button class="btn btn-play" data-audio="track2.mp3" data-title="Track Name 2">
+                                <i class="fas fa-play"></i> Escuchar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="track3.webp" alt="Track 3" class="card-img">
+                        <div class="card-content">
+                            <h3>Track Name 3</h3>
+                            <p>Extended Mix</p>
+                            <button class="btn btn-play" data-audio="track3.mp3" data-title="Track Name 3">
+                                <i class="fas fa-play"></i> Escuchar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="track4.webp" alt="Track 4" class="card-img">
+                        <div class="card-content">
+                            <h3>Track Name 4</h3>
+                            <p>Original Mix</p>
+                            <button class="btn btn-play" data-audio="track4.mp3" data-title="Track Name 4">
+                                <i class="fas fa-play"></i> Escuchar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN MASHUPS -->
+            <section id="Mashups" class="fade-in">
+                <div class="section-header">
+                    <h2>Mashups</h2>
+                    <div class="carousel-arrows">
+                        <button class="arrow-btn" onclick="scrollCarousel('mashups-carousel', -300)">&#10094;</button>
+                        <button class="arrow-btn" onclick="scrollCarousel('mashups-carousel', 300)">&#10095;</button>
+                    </div>
+                </div>
+                
+                <div class="carousel" id="mashups-carousel">
+                    <div class="card">
+                        <img src="mashup1.jpg" alt="Mashup 1" class="card-img">
+                        <div class="card-content">
+                            <h3>Mashup Pack Vol. 1</h3>
+                            <p>Edición especial club</p>
+                            <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="mashup2.jpg" alt="Mashup 2" class="card-img">
+                        <div class="card-content">
+                            <h3>Mashup Pack Vol. 2</h3>
+                            <p>Festival Edition</p>
+                            <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="mashup3.jpg" alt="Mashup 3" class="card-img">
+                        <div class="card-content">
+                            <h3>Special Edit</h3>
+                            <p>Bootleg exclusivo</p>
+                            <a href="#" class="btn">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN EVENTOS -->
+            <section id="Eventos" class="fade-in">
+                <div class="section-header">
+                    <h2>Eventos</h2>
+                    <div class="carousel-arrows">
+                        <button class="arrow-btn" onclick="scrollCarousel('fechas-carousel', -300)">&#10094;</button>
+                        <button class="arrow-btn" onclick="scrollCarousel('fechas-carousel', 300)">&#10095;</button>
+                    </div>
+                </div>
+                
+                <div class="carousel" id="fechas-carousel">
+                    <div class="card">
+                        <img src="evento1.jpeg" alt="Evento 1" class="card-img">
+                        <div class="card-content">
+                            <h3>DropZone Episode 002</h3>
+                            <p>Special Guest: Settebass</p>
+                            <a href="https://www.youtube.com/watch?v=20SbXi36AHo" target="_blank" class="btn">Escuchar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- REPRODUCTOR FLOTANTE INTERACTIVO -->
+        <div id="audio-player-bar" class="player-bar hidden">
+            <div class="player-info">
+                <i class="fas fa-music pulse-icon"></i>
+                <span id="player-title">Nombre del Track</span>
+            </div>
+            <audio id="main-audio" controls></audio>
+            <button id="close-player" class="close-btn">&times;</button>
+        </div>
+
+        <!-- FOOTER CON REDES SOCIALES -->
+        <footer>
+            <div class="social-container">
+                <p>SÍGUEME EN REDES SOCIALES</p>
+                <div class="social-icons">
+                    <a href="https://spotify.com" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+                    <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://soundcloud.com" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 SETTEBASS Music. Todos los derechos reservados.</p>
+        </footer>
+
+        <!-- Enlace al archivo de JavaScript interactivo -->
+        <script src="script.js"></script>
+    </body>
+</html>
